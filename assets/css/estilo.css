@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    padding: 20px 0px;
+    border-bottom: 1px solid purple;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.principal-1{
+    border-bottom: 1px solid purple;
+    text-align: center;
+}
+
+.principal-1 h1{
+    padding-top: 15px;
+}
+
+.principal-1 p{
+    padding: 10px;
+}
+
+.main-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
+}
+
+.seção-1{
+    text-align: center;
+    border: 1px solid purple;
+    margin: 10px;
+}
+
+.seção-1:hover{
+    width: 33vw;
+}
+
+.seção-1 h1:hover{
+    text-decoration: underline;
+}
+
+.end{
+    border-top: 1px solid purple;
+}
+
+.end p{
+    padding: 15px;
+    text-align: center;
+}
+
+.d-projeto{
+    max-width: 700px;
+}
+
+a{
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    padding-top: 5px
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    padding-top: 20px
+}
+
+i{
+    padding: 15px;
+    font-size: 25px;
+}
+
+.fa-js{
+    color: yellow
+}
+
+.fa-css3-alt{
+    color: blue
+}
+
+.fa-html5{
+    color: orange
+}
+
+.fa-code{
+    color: white;
+    cursor: pointer;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+@media (max-width: 620px){
+    .main-2{
+        display: block;
+    }
+}
