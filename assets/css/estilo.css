@@ -8,6 +8,7 @@
 
 body{
     background-color: black;
+    padding: 10px
 }
 
 header{
@@ -40,74 +41,48 @@ nav a:hover::after{
     width: 100%;
 }
 
-.principal-1{
+.about{
     border-bottom: 1px solid purple;
     text-align: center;
 }
 
-.principal-1 h1{
+.about h1{
     padding-top: 15px;
+    color: white
 }
 
-.principal-1 p{
+.about p{
     padding: 10px;
+    color: white
 }
 
-.main-2{
+.projetcs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 15px;
 }
 
-.seção-1{
+.project{
     text-align: center;
     border: 1px solid purple;
-    margin: 10px;
+    margin: 10px
 }
 
-.seção-1:hover{
-    width: 33vw;
+.img-project{
+    width: 100%;
+    padding-top: 5px
 }
 
-.seção-1 h1:hover{
+.project h1:hover{
     text-decoration: underline;
 }
 
-.end{
-    border-top: 1px solid purple;
-}
-
-.end p{
-    padding: 15px;
-    text-align: center;
-}
-
-.d-projeto{
+.description{
     max-width: 700px;
 }
 
 a{
     display: inline-block;
-}
-
-img{
-    width: 100%;
-    padding-top: 5px
-}
-
-h1{
-    text-align: center;
-    color: white;
-}
-
-p{
-    color: white;
-}
-
-h2{
-    text-align: center;
-    color: white;
-    padding-top: 20px
 }
 
 i{
@@ -132,16 +107,19 @@ i{
     cursor: pointer;
 }
 
-.projeto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
+footer{
+    border-top: 1px solid purple;
 }
 
-@media (max-width: 620px){
-    .main-2{
+footer p{
+    padding: 15px;
+    text-align: center;
+    color: white
+}
+
+@media (max-width: 660px){
+    .projetcs{
         display: block;
+        margin: 10px
     }
 }
