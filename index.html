@@ -11,18 +11,9 @@
 </head>
 
 <body>
-    <!-- <header>
-        <nav>
-            <a href="#sobre-mim">Sobre mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header> -->
-
     <div class="about">
-        <!-- coloque um id aonde queira ser redirecionado na mesma pagina -->
 
-        <img src="assets/img/Paulo-Cesar.jpg" alt="IMG-Paulo_César">
+        <img src="assets/img/Paulo-Cesar.jpg" alt="IMG-Paulo_César" id="sobre-mim">
 
         <h1 class="titulo-main-1">Paulo César</h1>
 
@@ -32,7 +23,14 @@
 
     </div>
 
-    <h2>Projetos</h2>
+    <div class="experiences">
+        <h2 id="Experiencias">Experiências</h2>
+        <p>Nenhuma experiencia profissional</p>
+        <br>
+        <small>Quem sabe na sua empresa?</small>
+    </div>
+
+    <h2  id="projetos">Projetos</h2>
 
     <div class="projetcs">
         <section class="project">
@@ -91,7 +89,17 @@
         </section>
     </div>
     <footer>
-        <p>Entre em contato comigo:</p>
+        <form action="https://formsubmit.co/paulo.figueiredo296@gmail.com" method="post">
+            <p id="contato">Entre em contato comigo:</p>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Coloque seu nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="seuEmail@email.com" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <button type="submit">Enviar</button>
+        </form>
     </footer>
 
         <script src="https://kit.fontawesome.com/f8f383386e.js" crossorigin="anonymous"></script>
